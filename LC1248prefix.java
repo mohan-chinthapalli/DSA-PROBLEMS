@@ -27,6 +27,7 @@ public class LC1248prefix {
             }
             map.put(prefixOddCount, map.getOrDefault(prefixOddCount, 0) + 1);
         }
+        
         System.out.println(count);
     }
 }
