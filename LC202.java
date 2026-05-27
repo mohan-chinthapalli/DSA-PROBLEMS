@@ -1,20 +1,18 @@
 public class LC202 {
     public static void main(String[] args) {
-        int n = 1;
+        int n = 32;
 
-        int sum=0;
-        while(sum!=1){
-        int digit =n;
-         sum = 0;
-        while(digit>0){
-            digit = digit % 10;
+        while(n!=1 && n!=4){
+        int sum = 0;
+        while(n>0){
+            int digit = n % 10;
             int square = digit*digit;
             sum+=square;
-            digit/=10;
+            n/=10;
         }
         n = sum;
     }
-        if(sum==1){
+        if(n==1){
             System.out.println(true);
         }
         else{
